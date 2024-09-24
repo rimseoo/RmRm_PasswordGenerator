@@ -1,4 +1,3 @@
-# -*- coding: utf-8 -*-
 """
 Created on Mon Sep 23 21:43:05 2024
 
@@ -7,6 +6,7 @@ Created on Mon Sep 23 21:43:05 2024
 
 
 #Password Generator Project
+
 import random
 
 def pass_gen():
@@ -18,7 +18,7 @@ def pass_gen():
     print("Welcome to the Rmrm Password Generator!\n")
     nr_letters= int(input("How many letters would you like in your password?\n")) 
     
-    ## Condition on the input is added:
+    ## Condition on the input added:
         
         #number of letters
     if nr_letters == 0:
@@ -27,7 +27,7 @@ def pass_gen():
     
     nr_symbols = int(input("How many symbols would you like?\n"))
     
-    ## Condition on the input is added:
+    ## Condition on the input added:
     
         #number of symbols
     if nr_symbols == 0:
@@ -36,7 +36,7 @@ def pass_gen():
     
     nr_numbers = int(input("How many numbers would you like?\n"))
        
-    ## Condition on the input is added:
+    ## Condition on the input added:
         
             #number of numbers
     if nr_numbers == 0:
@@ -57,7 +57,7 @@ def pass_gen():
     resultA = []  # To store the results from the loop
     for i in range(nr_letters):  # Repeat nr_letters times
         resultA.append(letters[i]) #add the items "i" from the shuffled list to the new list  "result"
-    #to join al the items in the list result we use ''.join(result). if we want spaces between the items we use ' '.join(words)
+    #to join all the items in the list result we use ''.join(result) | To have spaces between the items ' '.join(words) is used.
 
     random.shuffle(symbols)
     resultB = [] 
